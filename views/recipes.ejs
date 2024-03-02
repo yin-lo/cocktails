@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O'Recipes</title>
+</head>
+<body>
+
+  <header>
+    <h1>O'Recipes</h1>
+  </header>
+
+  <main>
+    <ul>
+
+      <% for (const recipe of recipes) { %>
+        <li>
+          <a href="/recipes/<%= recipe.name %>">
+            <%= recipe.name %>
+          </a>
+        </li>  
+      <% } %>
+
+    </ul>
+  </main>
+
+  <footer>
+    <small>O'Recipes - 2022 - Tous droits réservés à la gourmandise</small>
+  </footer>
+  
+</body>
+</html>
