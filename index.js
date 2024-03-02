@@ -1,13 +1,19 @@
-const express = require("express");
-const recipes = require("./data/recipes");
+const express = require('express');
+const recipes = require('./data/recipes');
 
 const app = express();
+app.set('view engine', 'ejs');
+app.set('views', './views');
 
-app.get("/", (req, res) => {
-  res.send(`Exemple de recette : ${recipes[0].name}`); // Pour l'instant, on n'envoie pas grand chose...
+app.use(express.static('data'));
+
+app.get('/', (req, res) => {
+	// res.send(`Exemple de recette : ${recipes[0].name}`);
+
+	res.render('recipes.ejs', {recipes});
 });
 
 const port = 3000;
 app.listen(port, () => {
-    console.log(`Listening at http://localhost:${port}`);
+	console.log(`Listening at http://localhost:${port}`);
 });
