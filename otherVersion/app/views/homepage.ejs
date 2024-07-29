@@ -1,0 +1,9 @@
+<%- include("partials/header") %>
+
+<ul>
+<% for(let cocktail of cocktails){ %>
+    <li><a href="/cocktail?name=<%= cocktail.name %>"><%= cocktail.name %></a></li>
+<% } %>
+</ul>
+
+<%- include("partials/footer") %>
