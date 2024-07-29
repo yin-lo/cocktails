@@ -1,26 +1,16 @@
 {
-  "name": "s03-o-recipies",
+  "name": "coktails",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/O-clock-Kelvin/S03-o-recipies.git"
-  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/O-clock-Kelvin/S03-o-recipies/issues"
-  },
-  "homepage": "https://github.com/O-clock-Kelvin/S03-o-recipies#readme",
-  "devDependencies": {
-    "nodemon": "^2.0.20"
-  },
   "dependencies": {
     "ejs": "^3.1.9",
-    "express": "^4.18.1"
+    "express": "^4.18.3"
   }
 }
